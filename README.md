@@ -26,8 +26,8 @@ To build a safe, isolated virtual environment that simulates a small company net
 | Machine          | Role                        | OS                  | RAM    | IP Address (example) |
 |------------------|-----------------------------|---------------------|--------|----------------------|
 | Kali-Lab         | Attacker / Security Tool    | Kali Linux          | 4 GB   | 192.168.182.133      |
-| Metasploitable   | Vulnerable Target           | Linux (Ubuntu-based)| 1 GB   | 192.168.182.x        |
-| Ubuntu-Secure    | Hardened Workstation        | Ubuntu Desktop      | 3 GB   | 192.168.x.x          |
+| Metasploitable   | Vulnerable Target           | Linux (Ubuntu-based)| 1 GB   | 192.168.182.136      |
+| Ubuntu-Secure    | Hardened Workstation        | Ubuntu Desktop      | 3 GB   | 192.168.182.135      |
 
 ### Network Configuration
 - **NAT Adapter**: Provides internet access (isolated from real network)
