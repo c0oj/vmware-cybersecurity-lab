@@ -30,54 +30,49 @@ To build a safe, isolated virtual environment that simulates a small company net
 
 ---
 
-## ✅ Completed Activities
+## ✅ Progress & Screenshots
 
-### Phase 1–3: Lab Setup & Hardening
-- Created and configured 3 VMs in VMware
-- Configured proper networking
-- Hardened Ubuntu-Secure with UFW firewall and SSH
+### Lab Setup
+![VMware Library](screenshots/01-vmware-library.png)
 
-### Phase 4: Vulnerability Identification
-- Performed detailed Nmap scans on Metasploitable
-- Discovered multiple vulnerable services
-- Accessed the Metasploitable web interface
+### Nmap Scanning & Reconnaissance
+![Nmap Metasploitable2 Scan](screenshots/04-nmap-metasploitable2-scan.png)  
+![Nmap Port Scan](screenshots/05-nmap-port-scan.png)  
+![Nmap Aggressive Scan](screenshots/06-nmap-aggressive-scan.png)  
+![Nmap Vulnerability Scan](screenshots/07-nmap-vulnerability-scan.png)
 
-### Screenshots Taken
+### Web Interface Exploration
+![Metasploitable Web Interface](screenshots/08-metasploitable-web-interface.png)  
+![DVWA Login Page](screenshots/09-dvwa-login.png)
 
-**Folder:** `/screenshots`
-
-- `01-vmware-library.png` – All VMs running
-- `02-nmap-scans.png` – Nmap scan results
-- `03-metasploitable-web-interface.png` – Main web page
-- `04-dvwa-login.png` – DVWA or other web apps (if taken)
-- `05-ufw-status.png` – Firewall status on Ubuntu
-- `06-other-scans.png` – Additional screenshots
+### System Hardening
+![UFW Firewall Status](screenshots/10-ufw-status.png)
 
 ---
 
 ## 🔍 Key Findings
 
-- Multiple services running on Metasploitable with known vulnerabilities
-- Web applications (such as DVWA) accessible with default credentials
-- Demonstrated difference between hardened Ubuntu and vulnerable Metasploitable
+- Multiple services and web applications discovered running on Metasploitable 2
+- Several Nmap scans revealed open ports and potential vulnerabilities
+- Successfully accessed the web interface from Kali Linux
+- Applied basic hardening on Ubuntu-Secure using UFW
 
 ---
 
 ## 📚 What I Learned
 
-- How to properly configure isolated lab networking in VMware
-- Importance of network scanning using Nmap
-- How easily vulnerable machines can be discovered and accessed
-- Value of system hardening (firewall, updates, strong credentials)
+- The effectiveness of different Nmap scan types for reconnaissance
+- How vulnerable machines expose multiple services
+- The importance of system hardening and firewall configuration
+- How to safely explore and document a target environment
 
 ---
 
-## 🚀 Next Steps (Planned)
+## 🚀 Next Steps
 
-- Successfully exploit services on Metasploitable
-- Perform basic incident response / forensics
-- Add SIEM tool (Wazuh)
-- Write full lab report
+- Attempt safe logins using default credentials
+- Perform basic exploitation exercises
+- Start basic digital forensics activities
 
 ---
 
