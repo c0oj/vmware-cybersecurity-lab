@@ -2,7 +2,7 @@
 
 A personal cybersecurity home lab built with VMware Workstation for hands-on practice in network security, vulnerability assessment, and ethical hacking.
 
-**Student:**  Chandler Yeardly  
+**Student:** [Your Full Name]  
 **Course:** Cybersecurity & Digital Forensics – Edinburgh College  
 **Date:** July 2026
 
@@ -20,54 +20,59 @@ To build a safe, isolated virtual environment that simulates a small company net
 - **Metasploitable 2** – Intentionally vulnerable target machine
 - **Ubuntu-Secure** – Hardened workstation
 
-**Networking:** NAT + Host-only adapters for internet access and internal communication.
+**Networking:** NAT + Host-only adapters
 
 ---
 
-## ✅ Key Activities & Findings
+## ✅ Key Activities & Screenshots
 
 ### 1. Network Scanning & Reconnaissance
-Performed multiple Nmap scans to identify open ports and services on the target machine. Discovered several vulnerable services running on Metasploitable 2.
+Performed multiple Nmap scans to identify open ports and services.
 
-**Screenshots:** Nmap scans (basic, aggressive, and vulnerability scripts)
+![Nmap Metasploitable2 Scan](screenshots/04-nmap-metasploitable2-scan.png)
+![Nmap Port Scan](screenshots/05-nmap-port-scan.png)
+![Nmap Aggressive Scan](screenshots/06-nmap-aggressive-scan.png)
+![Nmap Vulnerability Scan](screenshots/07-nmap-vulnerability-scan.png)
 
-### 2. Vulnerability Identification & Web Access
-Successfully accessed the Metasploitable web interface and identified vulnerable web applications such as DVWA.
+### 2. Vulnerability Identification, Web Access & SQL Injection
+Accessed the Metasploitable web interface and vulnerable applications.
 
-**Screenshots:** Web interface and DVWA login page
+![Metasploitable Web Interface](screenshots/08-metasploitable-web-interface.png)
+![DVWA Login](screenshots/09-dvwa-login.png)
+![SQL Injection Attempt](screenshots/14-sql-injection.png)
 
 ### 3. System Hardening
-Hardened the Ubuntu-Secure machine by enabling UFW firewall and configuring SSH.
+Enabled UFW firewall on Ubuntu-Secure.
 
-**Screenshots:** UFW status
+![UFW Firewall Status](screenshots/10-ufw-status.png)
 
-### 4. Safe Ethical Hacking
-Gained SSH access to the vulnerable machine and explored the filesystem. Attempted basic SQL injection on DVWA.
+### 4. Safe Ethical Hacking & Forensics
+Gained SSH access to Metasploitable. Created, deleted, and attempted to recover sensitive data using `strings` command.
 
-### 5. Basic Digital Forensics
-Created a file with sensitive data on Metasploitable, deleted it, and attempted recovery using the `strings` command on Kali. While full recovery was not achieved on the live system, string fragments were identified.
-
-**Screenshots:** File creation/deletion commands and recovery attempt
+![SSH Access](screenshots/11-ssh-login.png)
+![File Creating & Deletion](screenshots/17-create-remove-files.png)
+![Snapshots Created](screenshots/15-snapshot-before-forensics.png)
+![File Recovery](screenshots/16-file-recovery.png)
 
 ---
 
 ## 📚 What I Learned
 
-- The effectiveness of different Nmap scan types for reconnaissance
-- How outdated and default-configured systems are easily exploitable
-- The importance of proper system hardening
-- Basic concepts of digital forensics and the challenges of recovering deleted data on live systems
+- The power of reconnaissance with Nmap
+- How easily vulnerable systems can be accessed
+- Importance of system hardening
+- Basic digital forensics concepts and challenges of data recovery
 
 ---
 
 ## 🚀 Future Improvements
 
-- Advanced exploitation using Metasploit Framework
-- Full disk imaging and analysis with Autopsy
-- Implementation of a SIEM tool (e.g. Wazuh)
+- Advanced exploitation with Metasploit
+- Full disk imaging with Autopsy
+- SIEM implementation
 
 ---
 
 **Last Updated:** July 1, 2026
 
-*All activities were performed in an isolated educational lab environment.*
+*All activities performed in an isolated educational lab environment.*
