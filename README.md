@@ -2,7 +2,7 @@
 
 A personal cybersecurity home lab built with VMware Workstation for hands-on practice in network security, vulnerability assessment, and ethical hacking.
 
-**Student:** [Your Full Name]  
+**Student:** Chandler Yeardly
 **Course:** Cybersecurity & Digital Forensics – Edinburgh College  
 **Date:** July 2026
 
@@ -47,12 +47,12 @@ Enabled UFW firewall on Ubuntu-Secure.
 ![UFW Firewall Status](screenshots/10-ufw-status.png)
 
 ### 4. Safe Ethical Hacking & Forensics
-Gained SSH access to Metasploitable. Created, deleted, and attempted to recover sensitive data using `strings` command.
+Gained SSH access to the Metasploitable machine. Created a file with sensitive data, deleted it, and attempted recovery using the `strings` command on Kali Linux.
 
 ![SSH Access](screenshots/11-ssh-login.png)
-![File Creating & Deletion](screenshots/17-create-remove-files.png)
-![Snapshots Created](screenshots/15-snapshot-before-forensics.png)
-![File Recovery](screenshots/16-file-recovery.png)
+![File Creation & Deletion](screenshots/17-create-remove-files.png)
+![Snapshots Before Forensics](screenshots/15-snapshot-before-forensics.png)
+![File Recovery Attempt](screenshots/16-file-recovery.png)
 
 ---
 
