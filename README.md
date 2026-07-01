@@ -2,21 +2,15 @@
 
 A personal cybersecurity home lab built with VMware Workstation for hands-on practice in network security, vulnerability assessment, and ethical hacking.
 
-**Student:** Chandler Yeardly 
+**Student:**  Chandler Yeardly  
 **Course:** Cybersecurity & Digital Forensics – Edinburgh College  
-**Date:** June 2026
+**Date:** July 2026
 
 ---
 
 ## 🎯 Project Objective
 
-To build a safe, isolated virtual environment that simulates a small company network. This lab allows me to practice:
-
-- Network scanning and reconnaissance
-- System hardening
-- Vulnerability identification
-- Safe ethical hacking techniques
-- Digital forensics preparation
+To build a safe, isolated virtual environment that simulates a small company network. This lab allows me to practice network scanning, system hardening, vulnerability identification, safe ethical hacking, and basic digital forensics.
 
 ---
 
@@ -26,56 +20,54 @@ To build a safe, isolated virtual environment that simulates a small company net
 - **Metasploitable 2** – Intentionally vulnerable target machine
 - **Ubuntu-Secure** – Hardened workstation
 
-**Networking:** NAT + Host-only adapters
+**Networking:** NAT + Host-only adapters for internet access and internal communication.
 
 ---
 
-## ✅ Progress & Screenshots
+## ✅ Key Activities & Findings
 
-### Lab Setup
-![VMware Library](screenshots/01-vmware-library.png)
+### 1. Network Scanning & Reconnaissance
+Performed multiple Nmap scans to identify open ports and services on the target machine. Discovered several vulnerable services running on Metasploitable 2.
 
-### Nmap Scanning & Reconnaissance
-![Nmap Metasploitable2 Scan](screenshots/04-nmap-metasploitable2-scan.png)  
-![Nmap Port Scan](screenshots/05-nmap-port-scan.png)  
-![Nmap Aggressive Scan](screenshots/06-nmap-aggressive-scan.png)  
-![Nmap Vulnerability Scan](screenshots/07-nmap-vulnerability-scan.png)
+**Screenshots:** Nmap scans (basic, aggressive, and vulnerability scripts)
 
-### Web Interface Exploration
-![Metasploitable Web Interface](screenshots/08-metasploitable-web-interface.png)  
-![DVWA Login Page](screenshots/09-dvwa-login.png)
+### 2. Vulnerability Identification & Web Access
+Successfully accessed the Metasploitable web interface and identified vulnerable web applications such as DVWA.
 
-### System Hardening
-![UFW Firewall Status](screenshots/10-ufw-status.png)
+**Screenshots:** Web interface and DVWA login page
 
----
+### 3. System Hardening
+Hardened the Ubuntu-Secure machine by enabling UFW firewall and configuring SSH.
 
-## 🔍 Key Findings
+**Screenshots:** UFW status
 
-- Multiple services and web applications discovered running on Metasploitable 2
-- Several Nmap scans revealed open ports and potential vulnerabilities
-- Successfully accessed the web interface from Kali Linux
-- Applied basic hardening on Ubuntu-Secure using UFW
+### 4. Safe Ethical Hacking
+Gained SSH access to the vulnerable machine and explored the filesystem. Attempted basic SQL injection on DVWA.
+
+### 5. Basic Digital Forensics
+Created a file with sensitive data on Metasploitable, deleted it, and attempted recovery using the `strings` command on Kali. While full recovery was not achieved on the live system, string fragments were identified.
+
+**Screenshots:** File creation/deletion commands and recovery attempt
 
 ---
 
 ## 📚 What I Learned
 
 - The effectiveness of different Nmap scan types for reconnaissance
-- How vulnerable machines expose multiple services
-- The importance of system hardening and firewall configuration
-- How to safely explore and document a target environment
+- How outdated and default-configured systems are easily exploitable
+- The importance of proper system hardening
+- Basic concepts of digital forensics and the challenges of recovering deleted data on live systems
 
 ---
 
-## 🚀 Next Steps
+## 🚀 Future Improvements
 
-- Attempt safe logins using default credentials
-- Perform basic exploitation exercises
-- Start basic digital forensics activities
+- Advanced exploitation using Metasploit Framework
+- Full disk imaging and analysis with Autopsy
+- Implementation of a SIEM tool (e.g. Wazuh)
 
 ---
 
-**Last Updated:** June 29, 2026
+**Last Updated:** July 1, 2026
 
-*All activities performed in an isolated educational lab environment.*
+*All activities were performed in an isolated educational lab environment.*
